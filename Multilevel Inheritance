@@ -1,0 +1,60 @@
+package com.company;
+
+import com.sun.jdi.Value;
+import org.w3c.dom.ls.LSOutput;
+
+import java.security.spec.RSAOtherPrimeInfo;
+import java.util.*;
+class A
+{
+    public void show1()
+    {
+        System.out.println("This is class A");
+    }
+}
+class B extends A
+{
+    public void show2()
+    {
+        System.out.println("This is class B");
+    }
+}
+class C extends B
+{
+    public void show3()
+    {
+        System.out.println("This is class C");
+    }
+}
+
+public class Main
+{
+    public static void main(String[] args)
+    {
+        A obj1 = new A();
+        B obj2 = new B();
+        C obj3 = new C();
+        System.out.println("Class A ");
+        obj1.show1();
+        System.out.println("---------------");
+        System.out.println("Class B ");
+        obj2.show1();
+        obj2.show2();
+        System.out.println("---------------");
+        System.out.println("Class C ");
+        obj3.show1();
+        obj3.show2();
+        obj3.show3();
+
+
+    }
+
+
+}
+
+
+
+
+
+
+
